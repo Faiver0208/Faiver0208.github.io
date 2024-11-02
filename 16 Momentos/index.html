@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+          width: 90vw;
+          margin: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(to right,
+          rgb(0 0 0/ .5), rgb(0 0 0/ .75)), url(Mi\ Madre.jpeg.jpeg);
+          background-size: cover;
+          background-position: center;
+          text-align: center;
+  
+        }
+        .wrap-texto{
+          color: #fff;
+          width: 95%;
+          font-size: 45px;
+        }
+        .btn-confirmar{
+          background-color: cyan;
+          font-size: 20px;
+          cursor: pointer;
+           border-radius: 5px;
+        }
+        
+        
+      </style>
+  
+</head>
+<body>
+    <div class="wrap">
+        <div class="wrap-texto">
+         <h1>Mi album digital</h1>
+         <br>
+         <p>Aveces no conocemos el verdadero valor de un momento 
+           hasta que se combierte en memoria</p>
+     
+          <h4>Acceso de usuario</h4>
+          <form>
+              <br>
+              Ingrese su clave: <br>
+              <input type="password"id="clave">
+              <br>
+              <input type="button"value="confirmar" onclick="verficar()"class = "btn-confirmar">
+          </form>
+      
+         
+       
+        </div>
+       </div>
+       <script>
+         let control = 0;
+         let contrasenia = 'HTDFa01';
+         function verficar(){
+             let clave = document.getElementById('clave').value;
+             if(clave != contrasenia || clave == ''){
+                 alert('Clave incorrecta o vacia, intente de nuevo');
+                 control++;
+                 if(control >= 3){
+                     alert('Intentos agotados, acceso bloqeado\
+                                 contactar a soporte tecnico');
+                 }
+             }
+             else{
+               window.open('file:///C:/Users/USER/Desktop/16%20Momentos/15%20Momentos/fotos.html'); 
+               document.getElementById('clave').value = ''; // Limpiar campo de texto
+        
+             }
+             
+
+         }
+     </script>    
+     
+          
+     
+    
+</body>
+</html>

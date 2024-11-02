@@ -1,0 +1,42 @@
+/*Diseño para toda la pagina */
+body{
+    background-color: coral;
+}
+/*diseño del titulo*/
+h1{
+    color:saddlebrown;
+    text-align: center;
+    font-size: 45px;
+}
+/*Diseño para parrafos */
+p{
+    color: white;
+    font-size: 34px;
+}
+/*para darle diseño a un parrafo sin afectar el resto*/
+#parrafo-especial{
+    font-size: 40px;
+    font-weight: bold;
+}
+a, img{
+    display: block;
+}
+ 
+img{
+    
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+    border-top-left-radius: 80px;
+}
+button{
+    position: relative;
+    border: none;
+    height: 50px;
+    width: 200px;
+    font-size: 22px;
+    transition: .3s linear;
+    cursor: pointer;
+    background-color: #66ffff52;
+}
+
